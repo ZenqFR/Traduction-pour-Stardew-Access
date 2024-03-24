@@ -1,0 +1,44 @@
+# In menu.fr.ftl
+
+menu-billboard-calendar-day_info = {$is_current ->
+    [0] {EMPTYSTRING()}
+    *[1] Actuellement le
+  } Jour {$day}{$day_name ->
+    [null] {EMPTYSTRING()}
+    *[other] , {$day_name}
+  }{$day ->
+    [1] de {$season} year {$Ans}
+    *[other] {EMPTYSTRING()}
+  }{$extra_info ->
+    [null] {EMPTYSTRING()}
+    *[other] , {$extra_info}
+  }
+
+menu-social_page-npc_info = {$name}{$has_talked ->
+    [0] , Pas encore discuter avec 
+    *[1] {EMPTYSTRING()}
+  }{$relationship_status ->
+    [null] {EMPTYSTRING()}
+    *[other] , {$relationship_status}
+  }, {$heart_level} {$heart_level ->
+    [1] Coeur
+    *[other] hearts
+  }, {$gifts_this_week} {$gifts_this_week ->
+    [1] Cadeaut
+    *[other] gifts
+  } Offert cette semaine.
+
+# In fr.ftl
+
+terrain_util-tree_type = {$type ->
+    [1] Chêne
+    [2] Érable
+    [3] Pin
+    [4] Arbre d'hiver
+    [5] Arbre d'hiver
+    [6] Palmier
+    [7] Arbre à champignons
+    [8] Acajou
+    [9] Palmier
+    *[other] Numéro de type d'arbre inconnu {$type}
+  }

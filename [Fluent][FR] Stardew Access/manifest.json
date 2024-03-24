@@ -1,0 +1,17 @@
+﻿{
+  "Name": "[Fluent][FR] Stardew Access",
+  "Author": "Games-Access",
+  "Version": "1.0.2",
+  "Description": "<Games-Access est une plateforme en ligne permettant de trouver facilement tous les jeux accessibles pour les aveugles. Le site est disponible sous l'URL https://www.games-access.net>",
+  "UniqueID": "Games-Access.fluent.stardewaccess.fr",
+  "UpdateKeys": [ "Nexus:20621" ], // when you release the mod, see https://stardewvalleywiki.com/Modding:Modder_Guide/APIs/Update_checks
+  "ContentPackFor": {
+    "UniqueID": "Shockah.ProjectFluent"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "shoaib.stardewaccess",
+      "MinimumVersion": "1.6.0-beta.1"
+    }
+  ]
+}
